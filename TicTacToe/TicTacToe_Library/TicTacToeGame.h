@@ -10,7 +10,7 @@
 
 #define USED_CELL 1
 
-class TicTacToeGame{
+class TicTacToeGame {
 public:
 	TicTacToeGame();
 	int playTurn(int row, int column);

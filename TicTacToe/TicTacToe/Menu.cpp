@@ -13,8 +13,8 @@
 //if lost V = -100;
 //if draw V = 0;
 
-#include <iostream>;
-#include "TicTacToeGame.h"
+#include <iostream>
+#include <TicTacToeGame.h>
 using namespace std;
 
 void main() {
