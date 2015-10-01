@@ -76,18 +76,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -172,7 +176,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="unittest1.cpp" />
+    <ClCompile Include="TicTacToe_Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

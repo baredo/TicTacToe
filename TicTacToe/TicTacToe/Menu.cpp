@@ -15,11 +15,13 @@
 
 #include <iostream>
 #include <TicTacToeGame.h>
+#include <Position2D.h>
 using namespace std;
 
 void main() {
 
 	TicTacToeGame* newGame = new TicTacToeGame();
-	newGame->playTurn(0, 0);
-	newGame->playTurn(0, 0);
+	//Position2D position(0, 0);
+	newGame->playTurn(*new Position2D(0,0));
+	newGame->playTurn(*new Position2D(0,0));
 }

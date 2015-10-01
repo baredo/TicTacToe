@@ -2,26 +2,20 @@
 #define TIC_TAC_TOE_GAME
 #pragma once
 
-#define BOARD_ROW 3
-#define BOARD_COLUMN 3
-
-#define CIRCLE 2
-#define CROSS 1
-
-#define USED_CELL 1
+#include "TicTacToeBoard.h"
+#include "Position2D.h"
 
 class TicTacToeGame {
+
 public:
 	TicTacToeGame();
-	int playTurn(int row, int column);
+	int playTurn(Position2D position);
 
 private:
-	void initBoard();
-	int setCell(int row, int column);
+	short setValueInBoard(Position2D position);
 	void changePlayer();
-	bool isUsed(int row, int column);
 
-	int** board;
+	TicTacToeBoard board;
 	short playerTurn;
 };
 

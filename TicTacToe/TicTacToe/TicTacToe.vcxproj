@@ -70,15 +70,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\franciscojose\Source\Repos\TicTacToe\TicTacToe\TicTacToe_Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
