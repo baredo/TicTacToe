@@ -1,16 +1,38 @@
 #include "TicTacToeGame.h"
 
-TicTacToeGame::TicTacToeGame() {
+TicTacToeGame::TicTacToeGame(Player* player1, Player* player2) {
+	short winnerPlayer;
+	this->crossPlayer = player1;
+	player1->setId(CROSS);
+
+	this->circlePlayer = player2;
+	player2->setId(CIRCLE);
+	
 	playerTurn = CROSS;
+
+	while (1) {
+		playTurn();
+		board.showBoard();
+		winnerPlayer = board.whoHaveThreeInRow();
+		if (winnerPlayer != 0) {
+			if(winnerPlayer == CROSS) cout << "Gana jugador X" << endl;
+			else cout << "Gana jugador O" << endl;
+			board.cleanBoard();
+		}
+	}
 }
 
-int TicTacToeGame::playTurn(Position2D position) {
-	bool isPositionUsed;
+int TicTacToeGame::playTurn() {
 	
-	isPositionUsed = setValueInBoard(position);
+	if (playerTurn == CROSS) {
+		crossPlayer->turn(&board);
+	}
+	else {
+		circlePlayer->turn(&board);
+	}
 	changePlayer();
 	
-	return isPositionUsed;
+	return 0;
 }
 
 short TicTacToeGame::setValueInBoard(Position2D position) {

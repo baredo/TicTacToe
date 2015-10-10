@@ -3,19 +3,21 @@
 #pragma once
 
 #include "TicTacToeBoard.h"
-#include "Position2D.h"
+#include "Human.h"
 
 class TicTacToeGame {
 
 public:
-	TicTacToeGame();
-	int playTurn(Position2D position);
+	TicTacToeGame(Player* player1, Player* player2);
+	int playTurn();
 
 private:
 	short setValueInBoard(Position2D position);
 	void changePlayer();
 
 	TicTacToeBoard board;
+	Player* crossPlayer;
+	Player* circlePlayer;
 	short playerTurn;
 };
 
