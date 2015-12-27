@@ -48,6 +48,21 @@ short TicTacToeBoard::whoHaveThreeInRow(){
 	return false;
 }
 
+bool TicTacToeBoard::isDraw(){
+	Position2D* position;
+	for (int i = 0; i < BOARD_ROW; i++) {
+		for (int j = 0; j < BOARD_COLUMN; j++) {
+			position = new Position2D(i, j);
+			if (this->isPositionUsed(*position) == FREE_POSITION) {
+				delete position;
+				return false;
+			}
+		}
+	}
+	delete position;
+	return true;
+}
+
 void TicTacToeBoard::cleanBoard(){
 	Position2D* position;
 	

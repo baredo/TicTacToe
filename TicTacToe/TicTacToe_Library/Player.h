@@ -12,6 +12,7 @@ class Player {
 public:
 	Player(string name, int idPlayer);
 	virtual void turn(TicTacToeBoard* board) = 0;
+	virtual void endGame(TicTacToeBoard* board, short idPlayer) = 0;
 	void setId(int id) { this->idPlayer = id; }
 protected:
 	string name;

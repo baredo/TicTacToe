@@ -23,11 +23,12 @@ public:
 	short setValue(Position2D position, short value);
 	short getValue(Position2D position);
 	short whoHaveThreeInRow();
+	bool isDraw();
 	void cleanBoard();
-	
+	short isPositionUsed(Position2D position);
 
 private:
-	short isPositionUsed(Position2D position);
+	
 	short isWrongPosition(Position2D position);
 	void resetValue(Position2D position);
 

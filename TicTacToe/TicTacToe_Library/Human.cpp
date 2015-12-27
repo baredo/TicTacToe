@@ -22,3 +22,6 @@ void Human::turn(TicTacToeBoard* board){
 	
 	delete position;
 }
+
+void Human::endGame(TicTacToeBoard * board, short idPlayer){
+}

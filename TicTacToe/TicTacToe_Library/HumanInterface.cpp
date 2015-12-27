@@ -39,5 +39,8 @@ Position2D* HumanInterface::usedPositionReintroduce(){
 	return introduceBoardPosition();
 }
 
+void HumanInterface::endGame(TicTacToeBoard * board, short idPlayer){
+}
+
 HumanInterface::HumanInterface(){
 }
