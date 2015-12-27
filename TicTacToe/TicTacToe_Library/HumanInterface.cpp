@@ -9,10 +9,9 @@ Position2D* HumanInterface::introduceBoardPosition(){
 		castStringToIntegerError = false;
 
 		cout << "Introduce una posicion: " << endl;
-		cout << "\tFila: ";
-		getline(std::cin, stringRow);
-		cout << "\tColumna: ";
-		getline(std::cin, stringColumn);
+		cout << "\tFila: ";	getline(std::cin, stringRow);
+		
+		cout << "\tColumna: ";	getline(std::cin, stringColumn);
 		cout << endl;
 
 		try {
