@@ -10,6 +10,7 @@ void BoardInterface::showBoard(){
 			if (value == VOID) cout << " " << "|";
 			if (value == CROSS) cout << "X" << "|";
 			if (value == CIRCLE) cout << "O" << "|";
+			delete position;
 		}
 		cout << endl << "------" << endl;
 	}
