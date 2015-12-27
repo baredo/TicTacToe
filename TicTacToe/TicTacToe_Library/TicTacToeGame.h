@@ -14,6 +14,7 @@ public:
 private:
 	short setValueInBoard(Position2D position);
 	void changePlayer();
+	void AnybodyWon();
 
 	TicTacToeBoard board;
 	Player* crossPlayer;
